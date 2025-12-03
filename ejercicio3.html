@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mapa con Google Maps API</title>
+    <style>
+        /* Estilos generales */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            background-color: #f0f0f0;
+        } 
+
+        h3 {
+            background-color: #0078ff;
+            color: white;
+            padding: 15px;
+            margin: 0;
+            font-size: 1.5rem;
+            box-shadow: 0 3px 6px rgba(0,0,0,0.2);
+        }
+
+        #map {
+            height: 500px;
+            width: 90%;
+            max-width: 1000px;
+            margin: 20px auto;
+            border: 3px solid #0078ff;
+            border-radius: 10px;
+            box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+        }
+
+        @media (max-width: 600px) {
+            #map {
+                height: 400px;
+            }
+            h3 {
+                font-size: 1.2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h3>Mapa con Google Maps API</h3>
+    <div id="map"></div>
+
+    <script>
+        function initMap() {
+            // Coordenadas iniciales (ejemplo: La Paz, Bolivia)
+            const myLocation = { lat: -16.5000, lng: -68.1500 };
+
+            // Crear el mapa
+            const map = new google.maps.Map(document.getElementById("map"), {
+                center: myLocation,
+                zoom: 12,
+                mapTypeControl: false,
+                streetViewControl: false
+            });
+
+            // Añadir marcador
+            new google.maps.Marker({
+                position: myLocation,
+                map: map,
+                title: "Ubicación inicial"
+            });
+        }
+    </script>
+
+    <!-- Script de Google Maps con callback a initMap -->
+    <script async defer
+        src="https://maps.app.goo.gl/47ymLSpMpydcuHm86.com/maps/api/js?key=AIzaSyBD86gYUb6jzvHzUyGJg5r_p8HosjEGIm8&callback=initMap">
+    </script>
+</body>
+</html>

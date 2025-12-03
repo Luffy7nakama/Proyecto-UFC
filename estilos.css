@@ -1,0 +1,171 @@
+/* =============================== */
+/*   ESTILO PROFESIONAL UFC REAL   */
+/*   (LO MÁS PARECIDO A LA IMAGEN) */
+/* =============================== */
+
+/* --- CONFIGURACIÓN GENERAL --- */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #e5e5e5;
+    color: #111;
+}
+
+/* --- HEADER (BARRA SUPERIOR UFC) --- */
+header {
+    background-color: #fff;
+    border-bottom: 3px solid #d60000;
+    padding: 15px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 5px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 38px;
+    font-weight: 900;
+    letter-spacing: 2px;
+}
+
+header p {
+    margin: 0;
+    color: #444;
+    font-size: 14px;
+}
+
+/* MENÚ UFC */
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 12px;
+    display: flex;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #111;
+    font-weight: bold;
+    font-size: 15px;
+    padding-bottom: 4px;
+    border-bottom: 2px solid transparent;
+    transition: 0.3s;
+}
+
+nav ul li a:hover {
+    color: #d60000;
+    border-bottom: 2px solid #d60000;
+}
+
+/* CONTENEDOR PRINCIPAL */
+main {
+    width: 95%;
+    max-width: 1400px;
+    margin: auto;
+    padding: 20px 0;
+}
+
+/* --- TITULOS DE SECCIÓN UFC --- */
+section h2 {
+    font-size: 24px;
+    font-weight: 900;
+    color: #111;
+    margin: 20px 0 10px;
+}
+
+/* ------------------------------- */
+/*      TARJETAS PRINCIPALES       */
+/* ------------------------------- */
+article {
+    background-color: #ffffff;
+    border-radius: 6px;
+    padding: 15px;
+    margin: 20px 0;
+    box-shadow: 0px 0px 8px rgba(0,0,0,0.15);
+}
+
+article img,
+article video {
+    width: 100%;
+    border-radius: 6px;
+    margin-top: 10px;
+}
+
+article h3 {
+    margin: 0;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* ------------------------------- */
+/*     GRID ESTILO UFC REAL       */
+/* ------------------------------- */
+.grid-2 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 20px;
+}
+
+.grid-3 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+/* ESTILO TARJETAS TIPO UFC "NO TE PUEDES PERDER" */
+.card-pelea {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    position: relative;
+}
+
+.card-pelea span {
+    position: absolute;
+    top: 8px;
+    left: 8px;
+    background-color: #d60000;
+    padding: 4px 8px;
+    font-size: 12px;
+    font-weight: bold;
+    border-radius: 3px;
+}
+
+/* SECCIÓN NEGRA COMO UFC */
+.seccion-negra {
+    background-color: #111;
+    color: white;
+    padding: 30px 15px;
+    border-radius: 6px;
+    margin: 20px 0;
+}
+
+/* FOOTER */
+footer {
+    background-color: #fff;
+    padding: 20px;
+    text-align: center;
+    border-top: 3px solid #d60000;
+    margin-top: 40px;
+}
+
+footer p {
+    margin: 5px 0;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 28px;
+    }
+
+    nav ul {
+        gap: 10px;
+    }
+}
