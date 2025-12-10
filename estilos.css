@@ -4,32 +4,6 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Arial', sans-serif;
-    header {
-    display: flex; /* Permite que los elementos se alineen en fila */
-    align-items: center; /* Centra verticalmente todos los elementos */
-    justify-content: space-between; /* Distribuye el espacio entre los elementos (logo, título, nav) */
-    padding: 10px 20px; /* Un poco de espacio alrededor del header */
-    /* Puedes agregar background-color aquí si quieres un color de fondo para el header */
-}
-
-/* Estilo para el logo */
-#logo {
-    max-width: 80px; /* Ajusta el ancho máximo del logo a tu gusto */
-    height: auto; /* Mantiene la proporción de la imagen */
-    margin-right: 20px; /* Un poco de espacio a la derecha del logo */
-}
-
-/* Ajuste para el título (h1) si es necesario */
-header h1 {
-    margin: 0; /* Elimina márgenes por defecto para mejor alineación */
-    flex-grow: 1; /* Permite que el título ocupe el espacio disponible (opcional) */
-}
-
-/* Ajuste para el menú de navegación (nav) */
-.nav-menu {
-    margin-left: 20px; /* Un poco de espacio a la izquierda del menú */
-}
-
 }
 
 body {
