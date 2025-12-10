@@ -68,12 +68,7 @@ window.addEventListener("scroll", () => {
 topBtn.addEventListener("click", () => {
     window.scrollTo({ top: 0, behavior: "smooth" });
 });
-
-const darkBtn = document.createElement("button");
-darkBtn.id = "dark-btn";
-darkBtn.textContent = "🌙";
-document.body.appendChild(darkBtn);
-
+const darkBtn = document.getElementById("dark-btn");
 if (localStorage.getItem("modo") === "oscuro") {
     document.body.classList.add("oscuro");
 }
